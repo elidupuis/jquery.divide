@@ -1,0 +1,6 @@
+Options:
+
+threshold: 0		//	only act if number of children is greater than this number
+cols: 2				//	number of columns to create out of initial items
+wrapper: 'div'		//	not used if 'target' is set
+target: null		//	expression for selecting child (if something other than all children is required)
