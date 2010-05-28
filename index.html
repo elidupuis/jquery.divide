@@ -1,0 +1,99 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<style type="text/css" media="screen">
+		ul,ol	{ float:left; margin:20px; }
+		#anotherBigList,
+		#nav	{ clear:left; }
+	</style>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="jquery.divide.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" charset="utf-8">
+		$(document).ready(function(){
+			$('#theBigList').divide({
+				cols:3,
+				wrapper:'span'
+			});
+			$('#anotherBigList').divide({
+				cols:6
+			});
+			$('#nav > li').divide({
+				target:'ul'
+			});
+		});
+	</script>
+	<title>Split Children tests</title>
+	
+</head>
+
+<body>
+
+<ul id="theBigList">
+	<li>one</li>
+	<li>two</li>
+	<li>three</li>
+	<li>four</li>
+	<li>five</li>
+	<li>six</li>
+	<li>seven</li>
+	<li>eight</li>
+	<li>nine</li>
+	<li>ten</li>
+	<li>eleven</li>
+	<li>twelve</li>
+	<li>thirteen</li>
+	<li>fourteen</li>
+	<li>fifteen</li>
+	<li>sixteen</li>
+</ul>
+
+<ul id="anotherBigList">
+	<li>one</li>
+	<li>two</li>
+	<li>three</li>
+	<li>four</li>
+	<li>five</li>
+	<li>six</li>
+	<li>seven</li>
+	<li>eight</li>
+	<li>nine</li>
+	<li>ten</li>
+	<li>eleven</li>
+	<li>twelve</li>
+	<li>thirteen</li>
+	<li>fourteen</li>
+	<li>fifteen</li>
+	<li>sixteen</li>
+</ul>
+
+<ul id="nav">
+<li id="nav-departments"><a href="#">Departments</a>
+	<div><ul>
+		<li><a href="#">Assessment &amp; Tax</a></li>
+		<li><a href="#">Communications</a></li>
+		<li><a href="#">Corporate Planning</a></li>
+		<li><a href="#">Econ. Development &amp; Tourism</a></li>
+		<li><a href="#">Emergency Services</a></li>
+		<li><a href="#">Engineering &amp; Enviro. Planning</a></li>
+		<li><a href="#">Facility Services</a></li>
+		<li><a href="#">Family &amp; Community Services</a></li>
+		<li><a href="#">Financial Services</a></li>
+		<li><a href="#">Fleet Services</a></li>
+		<li><a href="#">Human Resources</a></li>
+		<li><a href="#">Information Technology Services</a></li>
+		<li><a href="#">Legislative &amp; Legal Services</a></li>
+		<li><a href="#">Planning &amp; Development Services</a></li>
+		<li><a href="#">RCMP &amp; Enforcement Services</a></li>
+		<li><a href="#">Recreation,Parks &amp; Culture</a></li>
+		<li><a href="#">Transportation &amp; Agriculture</a></li>
+		<li><a href="#">Transit</a></li>
+		<li><a href="#">Utilities</a></li>
+	</ul></div>
+</li>
+</ul>
+
+</body>
+</html>
