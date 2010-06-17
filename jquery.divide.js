@@ -56,7 +56,7 @@ jQuery.fn.divide = function(options) {
 				
 				//	determine number of elements to get for this column:
 				var itemsToGet = minPerCol;
-				if (i < tallCols) itemsToGet = minPerCol++;
+				if (i < tallCols) itemsToGet = minPerCol + 1;
 
 				//	create new element for this column:
 				var thisList = $('<' + elmType + ' class="' + opts.classPrefix + (i+1) + '">');
