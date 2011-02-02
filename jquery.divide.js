@@ -10,7 +10,7 @@
 
 var ver = '0.3';
 
-jQuery.fn.divide = function(options) {
+$.fn.divide = function(options) {
 
 	// iterate and reformat each matched element
 	return this.each(function() {
