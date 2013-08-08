@@ -4,6 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<title>jquery.divide examples</title>
 	<style type="text/css" media="screen">
 		ul,ol		{ float:left; margin:20px; }
 		#example1,
@@ -16,7 +17,7 @@
 			$('#example1').divide({
 				cols:6
 			});
-			
+
 			$('#example2').divide({
 				cols:3,
 				wrapper:'span'
@@ -25,21 +26,29 @@
 			$('#example3').divide({
 				threshold:5
 			});
-			
+
 			$('#nav > li').divide({
 				target:'ul'
 			});
 		});
 	</script>
-	<title>Split Children tests</title>
-	
+
 </head>
 
 <body>
-	
+
 	<h1>jquery.divide examples</h1>
-	
+
+	<p><a href="https://github.com/elidupuis/jquery.divide">Get the code</a>.</p>
+
 	<h2>basic usage</h2>
+
+	<pre>
+		$('#example1').divide({
+			cols:6
+		});
+	</pre>
+
 	<ul id="example1">
 		<li>one</li>
 		<li>two</li>
@@ -59,8 +68,16 @@
 		<li>sixteen</li>
 	</ul>
 
-	
+
 	<h2>specifying a custom wrapper element</h2>
+
+	<pre>
+		$('#example2').divide({
+			cols:3,
+			wrapper:'span'
+		});
+	</pre>
+
 	<ul id="example2">
 		<li>one</li>
 		<li>two</li>
@@ -82,6 +99,13 @@
 
 
 	<h2>using a threshold</h2>
+
+	<pre>
+		$('#example3').divide({
+			threshold:5
+		});
+	</pre>
+
 	<ul id="example3">
 		<li>one</li>
 		<li>two</li>
@@ -93,6 +117,13 @@
 	<p>this list is not divided because it did not meet the minimum threshold requirement</p>
 
 	<h2>specifying a target child element</h2>
+
+	<pre>
+		$('#nav > li').divide({
+			target:'ul'
+		});
+	</pre>
+
 	<ul id="nav">
 		<li id="nav-departments">
 			<a href="#">Departments</a>
@@ -121,7 +152,7 @@
 			</div>
 		</li>
 	</ul>
-	
+
 	<p>note that the above example could also be achieved by using <code>$('#nav > li ul')</code> as the selector. the <code>target</code> option is simply for versatility.</p>
 
 </body>

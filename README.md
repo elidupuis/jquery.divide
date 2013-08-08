@@ -1,5 +1,6 @@
 # jquery.divide
 
+A jquery plugin that splits HTML lists (or other elements) into a specified number of columns, maintaining the vertical sort order.
 
 ## Options
 
